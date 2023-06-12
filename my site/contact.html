@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact us</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="menu/style.css">
+<link rel="stylesheet" href="contact us/style.css">
+</head>
+<body>
+	<!-- search -->
+	<div id="myOverlay" class="overlay">
+		<span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+		<div class="overlay-content">
+		  <form action="#">
+			<input type="text" placeholder="Search.." name="search">
+				</form>
+		</div>
+	  </div>
+	<!--menu-->
+	<ul class="menu">
+		<li style="--clr:#00ade1" >
+		  <a href="index.html" data-text="&nbsp;Home">&nbsp;Home&nbsp; </a>
+		</li>
+		<li style="--clr:#ff6492">
+		  <a href="login.html" data-text="&nbsp;login">&nbsp;login&nbsp;</a>
+		</li>
+		<li style="--clr:#ffdd1c">
+		  <a href="products.html" data-text="&nbsp;products">&nbsp;product&nbsp;</a>
+		</li>
+		<li style="--clr:#00dc82">
+			<a href="#" data-text="&nbsp;search" class="openBtn" onclick="openSearch()">&nbsp;search&nbsp;</a>
+		</li>
+		<li style="--clr:#dc00d4">
+		  <a href="#" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
+		</li>
+	  </ul>
+	  <!--menu-->
+	<section class="contact">
+		<div class="content">
+			<h2>Contact Us</h2>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem numquam id reprehenderit, sunt laudantium enim possimus repellat debitis et quis!</p>
+		</div>
+		<div class="container">
+			<div class="contactInfo">
+				<div class="box">
+					<div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+					<div class="text">
+						<h3>Address</h3>
+						<p>402671 Sugar Camp Road,<br>Owatonna,Minnesota,<br>55025060</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+					<div class="text">
+						<h3>Phone</h3>
+						<p>000-000-0000</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+					<div class="text">
+						<h3>Email</h3>
+						<p>wrub7d78i0e@temporary-mail</p>
+					</div>
+				</div>
+				<h2 class="txt">Connect with us</h2>
+				<ul class="sci">
+					<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+					<li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+					<li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+					<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+				</ul>
+			</div>
+
+			<div class="contactForm">
+				<form>
+					<h2>Send Message</h2>
+					<div class="inputBox">
+						<input type="text" name="" required="required">
+						<span>Full Name</span>
+					</div>
+					<div class="inputBox">
+						<input type="text" name="" required="required">
+						<span>Email</span>
+					</div>
+					<div class="inputBox">
+						<textarea required="required"></textarea>
+						<span>Type your Message...</span>
+					</div>
+					<div class="inputBox">
+						<input type="submit" value="Send">
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script>
+        function openSearch() {
+          document.getElementById("myOverlay").style.display = "block";
+        }
+        
+        function closeSearch() {
+          document.getElementById("myOverlay").style.display = "none";
+        }
+        </script>
+</body>
+</html>

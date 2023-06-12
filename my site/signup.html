@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="signup/signup.css">
+
+    <title>sign up</title>
+</head>
+
+<body>
+    <div class="modal-wrap">
+        <div class="modal-header"><span class="is-active"></span><span></span><span></span></div>
+        <div class="modal-bodies">
+            <div class="modal-body modal-body-step-1 is-showing">
+                <div class="title">Step 1</div>
+                <div class="description">Type Your Real Name and Email</div>
+                <form>
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <div class="text-center">
+                        <div class="button">Start</div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-body modal-body-step-2">
+                <div class="title">Step 2</div>
+                <div class="description">Select Your Gender</div>
+                <form>
+                    <label>
+                        <input type="radio" name="radio" />Man ?
+                    </label>
+                    <label>
+                        <input type="radio" name="radio" id="radio2" />Woman ?
+                    </label>
+                    <div class="text-center fade-in">
+                        <div class="button">Next</div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-body modal-body-step-3">
+                <div class="title">Step 3</div>
+                <div class="description">Check your email for the results.</div>
+                <div class="text-center">
+                    <a href="index.html" class="button">Go to Home</a>
+                    <div class="button">Done!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <div class="rerun-button">ReRun</div>
+    </div>
+   
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <script src="signup/signup.js"></script>
+</body>
+
+</html>

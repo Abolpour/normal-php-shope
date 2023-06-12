@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Products </title>
+  <link rel="stylesheet" href="products/style.css">
+  <link rel="stylesheet" href="menu/style.css">
+  <!-- <link rel="stylesheet" href="contact us/style.css"> -->
+
+</head>
+<body>
+  
+    <!-- search -->
+    <div id="myOverlay" class="overlay">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+      <div class="overlay-content">
+        <form action="#">
+          <input type="text" placeholder="Search.." name="search">
+              </form>
+      </div>
+    </div>
+  <!--menu-->
+  <ul>
+    <li style="--clr:#00ade1" >
+      <a href="index.html" data-text="&nbsp;Home">&nbsp;Home&nbsp; </a>
+    </li>
+    <li style="--clr:#ff6492">
+      <a href="login.html" data-text="&nbsp;login">&nbsp;login&nbsp;</a>
+    </li>
+    <li style="--clr:#ffdd1c">
+      <a href="products.html" data-text="&nbsp;products">&nbsp;product&nbsp;</a>
+    </li>
+    <li style="--clr:#00dc82">
+      <a href="#" data-text="&nbsp;search" class="openBtn" onclick="openSearch()">&nbsp;search&nbsp;</a>
+    </li>
+    <li style="--clr:#dc00d4">
+      <a href="contact.html" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
+    </li>
+  </ul>
+<!-- partial:index.partial.html -->
+<main class="container">
+  <section class="card">
+    <div class="product-image">
+      <img src="/products/red shoe.png" alt="OFF-white Red Edition" draggable="false" />
+    </div>
+    <div class="product-info" >
+      <h2>Nike X OFF-white</h2>
+      <p>The 10: Air Jordan 1 off-white - Chicago</p>
+      <div class="price">$999</div>
+    </div>
+    <div class="btn">
+      <button  class="buy-btn" onclick="document.location='product/red shoe.html'">Buy Now</button>
+      <button class="fav">
+        <svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+        </svg>
+      </button>
+    </div>
+  </section>
+  <section class="card card-blue">
+    <div class="product-image">
+      <img src="/products/blue shoe.png" alt="OFF-white Blue Edition" draggable="false" />
+    </div>
+    <div class="product-info">
+      <h2>Nike X OFF-white</h2>
+      <p>Air Jordan 1 Retro High "Off-White - UNC"</p>
+      <div class="price">$1599</div>
+    </div>
+    <div class="btn">
+      <button class="buy-btn"  onclick="document.location='product/blue shoe.html'">Buy Now</button>
+      <button class="fav">
+        <svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
+        </svg>
+      </button>
+    </div>
+  </section>
+</main>
+<!-- partial -->
+<script>
+  function openSearch() {
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  function closeSearch() {
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  </script>
+</body>
+</html>
